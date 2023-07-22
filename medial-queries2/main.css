@@ -1,3 +1,53 @@
 body {
   background: papayawhip;
 }
+@media screen and (max-width: 768px){
+  .a{
+    grid-column: span 3;
+  }
+  .b{
+    min-height: 200px;
+    border: none;
+  }
+  .f{
+    grid-column: span 3;
+  }
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,24%);
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center; 
+}
+
+div {
+  font-size: 100px;
+  display: flex;
+  min-height: 200px;
+}
+
+.a{
+  grid-column: span 4;
+  background-color: gray;
+}
+
+.b{
+  grid-column: span 3;
+  background-color: brown;
+}
+
+.c,.d,.e{
+  grid-row: 3 / span 1;
+  background-color: rgb(54, 53, 53);
+}
+
+.f{
+  grid-row: span 2;
+  background-color: rgb(113, 113, 161);
+  height: 100%;
+}
+
+

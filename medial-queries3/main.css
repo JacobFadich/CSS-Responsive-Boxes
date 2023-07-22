@@ -1,3 +1,43 @@
 body {
   background: peachpuff;
 }
+@media screen and (max-width: 768px){
+  .h {
+    grid-column:  span 3;
+    height: 200px;
+  }
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,24%);
+  column-gap: 10px;
+  row-gap: 10px;
+   
+}
+div {
+  font-size: 100px;
+  display: flex;
+  min-height: 200px;
+}
+
+.a{
+  grid-column: span 4;
+  background-color: gray;
+}
+
+.b,.c,.d{
+  grid-row: 2/span 1;
+  background-color:brown;
+}
+
+.h{
+  grid-row: span 2;
+  background-color: blue;
+  height: 100%;
+}
+
+.e,.f,.g{
+  grid-row: 3/span 1;
+  background-color: white;
+}
+
